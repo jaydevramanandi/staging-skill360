@@ -18,4 +18,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/html/staging_jd
+            git config --global --add safe.directory /var/www/html/staging_jd
             git pull origin main
